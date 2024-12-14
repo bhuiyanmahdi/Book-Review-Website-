@@ -1,0 +1,189 @@
+:root{
+  --green:#3A9943;
+}
+
+
+*{
+  font-family: 'Roboto', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  text-transform: none;
+  outline: none; border:none;
+  text-decoration: none;
+  transition: all .2s linear;
+}
+
+*::selection{
+  background:var(--green);
+  color:#fff;
+}
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+.header-1,
+.header-2,
+.header-3{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background:var(--green);
+ }
+ .header-1{
+  border-bottom: 1px solid #D5B4B4;
+}
+.header-3{
+  background:#fff;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  position: relative;
+  z-index: 10000;
+}
+.header-1 a{
+  padding:0 .7rem;
+  color:#fff;
+  font-size: 2rem;
+}
+.header-1 a:hover{
+  color:yellow;
+}
+.header-2 .logo{
+  font-weight: bolder;
+  font-size: 30px;
+  color:#fff;
+}
+.header-2 .logo i{
+  color:yellow;
+}
+
+.header-2 .search-bar-container{
+  display: flex;
+  align-items: center;
+  width: 50rem;
+  padding:1.5rem;
+  background:rgba(255,255,255,.2);
+  border-radius: .5rem;
+}
+.header-2 .search-bar-container #search-bar{
+  width: 100%;
+  background:none;
+  text-transform: none;
+  color:#fff;
+  font-size: 1.7rem;
+}
+
+.header-2 .search-bar-container #search-bar::placeholder{
+  text-transform: capitalize;
+  color:#ddd;
+}
+
+.header-2 .search-bar-container label{
+  color:#fff;
+  cursor: pointer;
+  font-size: 2rem;
+  padding:0 .5rem;
+}
+
+.header-2 .search-bar-container label:hover{
+  color:yellow;
+}
+
+.header-3 .navbar a{
+  color:#666;
+  font-size: 2rem;
+  margin-right: 2rem;
+}
+
+.header-3 .icons a{
+  color:#666;
+  font-size: 2.5rem;
+  margin-left: 2rem;
+}
+
+.header-3 a:hover{
+  color:var(--green);
+  transition: 0.5s;
+  font-size: 24px;
+}
+
+.home{
+  min-height: 720px;
+  position: relative;
+  
+
+  background-image:url(./book.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+
+  color: #3A9943;
+  font-size: 20px;
+  padding-left: 225px;
+  padding-right: 225px;
+}
+
+section{
+  padding:1.5rem 9%;
+}
+
+.heading{
+  margin: 10px;
+  font-size: 3rem;
+  color:#444;
+  padding-left: 1rem;
+  border-left: .4rem solid var(--green);
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.main{
+
+}
+.cards{
+  width: 25% ;
+  display: inline-block;
+  
+  border-radius: 5px;
+  margin: 40px;
+  box-shadow: 2px 2px 2px black ;
+
+}
+.cards:hover{
+  box-shadow: 5px 5px 5px 5px black ;
+}
+.image img{
+  width: 100%;
+}
+.title{
+  text-align: center;
+  padding: 5px;
+}
+.description{
+  text-align: center;
+  padding: 5px;
+}
+.buttonn{
+  margin: margin-top: 30px;
+  margin-bottom: 30px;
+  
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+.buttonn:hover{
+  background-color: black;
+  color: white;
+  transition: .5s;
+}
+
